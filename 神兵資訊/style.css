@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+.header-left a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.header-logo {
+    margin-left: 50px;
+    width: 90px;
+}
+
+
+.hearder-right-rol a {
+    margin-right: 70px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.hearder-right-rol a:hover {
+    color: #BB2D3B;
+}
+
+.rwd-945 {
+    display: none;
+}
+
+/* fake------------------------------------ */
+.fake {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    z-index: 10;
+    width: 80px;
+    height: calc(100vh - 100px);
+}
+
+.fake img {
+    width: 20px;
+    margin: 20px;
+}
+
+.fake-top {
+    position: absolute;
+    bottom: 5%;
+    padding: 9px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: #0E2870;
+}
+
+/* main about----------------------------------- */
+#about {
+    height: 850px;
+}
+
+.about-left {
+
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.about-img {
+    position: relative;
+    width: 85%;
+    height: 534px;
+    background-image: url('./img/main/about-img.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-text {
+    position: absolute;
+    right: 165px;
+    bottom: -200px;
+    padding: 64px;
+    width: 638px;
+    height: 398px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    animation: opacity 2s;
+
+}
+
+.about-text h1 {
+    margin: 16px 0 8px 0;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.about-text-main {
+    display: flex;
+}
+
+.about-text-main h1 {
+    margin-top: 0;
+    margin-right: 15px;
+}
+
+.about-text-main p {
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.about-more {
+    position: absolute;
+    right: 240px;
+    bottom: -230px;
+    background-color: #dc3545;
+    border-radius: 5px;
+    animation: opacity 2s;
+
+}
+
+.about-more a {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    width: 150px;
+    height: 60px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.about-more:hover {
+    background-color: #BB2D3B;
+
+}
+
+/* main service------------------------------ */
+#service {
+    position: relative;
+    width: 100%;
+
+    height: 400px;
+    background-color: #0E2870;
+}
+
+.service {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 1300px;
+}
+
+.service-detail {
+    padding-top: 95px;
+    padding-left: 150px;
+    color: white;
+}
+
+.service-detail h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.service-detail p {
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 55px;
+    font-size: 16px;
+    font-weight: 400;
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+
+.service-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1300px;
+    height: 800px;
+}
+
+.service-col {
+    margin: 25px;
+    width: 300px;
+    height: 340px;
+    background-color: #F8F8F8;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1), 12px 12px 2px 2px rgba(255, 255, 255, 0.3), 5px 5px 2px 2px rgba(255, 255, 255, 0.589);
+
+}
+
+.service-col h3 {
+    margin-top: 45px;
+    color: #535353;
+    font-size: 28.8px;
+    font-weight: 500;
+    text-align: center;
+    animation: fadeInUp;
+    animation-duration: 4s;
+}
+
+.service-col p {
+    margin: 15px 30px;
+    font-style: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #9b9b9b;
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+
+/* main explain--------------------------------------- */
+#explain {
+    margin-top: 680px;
+    height: 610px;
+}
+
+.explain {
+    position: relative;
+    width: 100%;
+    height: 481px;
+    background-image: url('./img/main/explain.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.explain::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 481px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.explain-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+    width: 950px;
+    height: 150px;
+    color: white;
+
+}
+
+.explain h2 {
+
+    font-size: 50px;
+    font-weight: 500;
+
+
+}
+
+.explain p {
+
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 50px;
+
+
+}
+
+/* footer----------------------------------------- */
+#footer {
+    padding: 100px;
+    width: 100%;
+    background-color: #0E2870;
+    color: white;
+
+}
+
+#footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+#footer h1 {
+    margin-bottom: 50px;
+}
+
+.info-enter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.info-enter-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.enter {
+    width: 100%;
+}
+
+.enter input {
+    width: 95%;
+}
+.email-enter{
+    margin-right: -2%;
+}
+.enter2 {
+    width: 100%;
+}
+
+.enter2 input {
+    width: 100%;
+}
+
+.info-enter input {
+    margin-top: 10px;
+    height: 40px;
+    border: 0px solid #0E2870;
+    border-bottom: 1px solid white;
+    background-color: #0E2870;
+}
+.info-enter input:hover{
+    border: 1px solid white;
+}
+.info-enter input:focus{
+    background-color: white;
+    border: 1px solid #0E2870;
+}
+
+.info-message input{
+    height: 150px;
+}
+.submit-btn{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 5px 40px;
+    font-size: 20px;
+    background-color: #0E2870;
+}
+.submit-btn:hover{
+    background-color: red;
+}
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.info p{
+    margin: 0 5px;
+}
+.footer-last{
+    margin-left: 11.5%;
+}
+
+
+
+
+
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media(max-width:945px) {}
